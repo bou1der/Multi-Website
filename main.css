@@ -199,6 +199,71 @@ header nav
     line-height: 18px;
     margin: 0px;
 }
+/* carousel */
+.carouselh2{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+    color: #C5C5C5;
+}
+.carouselbuttons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    color: #FCFCFD;
+    box-shadow:3px 3px 5px #0f0f0f49;
+    width: 160px;
+    height: 70px;
+    border-radius: 17px;
+}
+.carouselbuttons div
+{
+    position: relative;
+
+}
+.carouselbuttons button
+{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    padding: 0px;
+
+}
+.carouselbuttons span
+{
+    content: "";
+    height: 50%;
+    border: 1px #E6E8EC solid;
+    border-radius: 2px;
+}
+.carouselbuttons button:hover
+{
+    background-color: #00000011;
+}
+.carouselgrid
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.carousel
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#carousel
+{
+    transition: transform 0.2s ease-in-out;
+}
+
+/* carousel */
 .block2 table
 {
     width: 100%;
@@ -310,7 +375,6 @@ header nav
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
-    letter-spacing: 0.11800127476453781px;
     text-align: left;
     color: white;
     background-color: #1C1D2059;
@@ -319,7 +383,7 @@ header nav
     padding: 14px;
     padding-top: 9px;
     padding-bottom: 9px;
-    margin-left: 10%;
+    margin-left: 10px;
 }
 .cardbottom
 {
@@ -506,7 +570,6 @@ header nav
 
  display: flex;
  justify-content: center;
-
 }
 .ASD
 {
@@ -514,6 +577,17 @@ header nav
     width: 95%;
     background-color: black;
     border-radius: 30px;
+}
+@media (max-widght:460px)  {
+    .block5content
+    {
+        width: 100%;
+        visibility: none;
+    }
+    article
+    {
+        border: 10px red solid;
+    }
 }
 .block5leftbutt
 {
@@ -535,7 +609,8 @@ header nav
     flex-flow: column wrap;
     background-color: #000000;
     align-content: center;
-    gap: 20px   ;
+    gap: 20px;
+    margin-top: 40px;
 }
 .footerTop h3
 {
