@@ -20,6 +20,8 @@ body
 article
 {
     margin-top: 30px;
+    right: 0px;
+    position: relative;
 }
 header
 {
@@ -255,12 +257,9 @@ header nav
 .carousel
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
-}
-#carousel
-{
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 /* carousel */
@@ -366,7 +365,6 @@ header nav
  background-color: #ffffff;
  border-radius: 23px;
  box-shadow: 38px 11px 40px 0px #bdbdbd99;
- 
 
 }
 .time 
