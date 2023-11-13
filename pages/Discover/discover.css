@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&display=swap');
+/* styles */
+.ButPlaceBid
+{
+    text-decoration: none;
+    color: white;
+    background-color: #141416;
+    border-radius: 11px;
+    padding:18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+/* styles */
+html
+{
+    scroll-behavior: smooth;
+    position: static;
+}
+body
+{
+    background-color: #F9F9F9;
+    font-size: 16px;
+    color: black;
+    font-family: Poppins,Inter,Public Sans,cursive;
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    line-height: 1.4;
+    min-width: 250px;
+    margin: 0px;
+
+}
+article
+{
+    margin-top: 30px;
+    right: 0px;
+    position: static;
+}
+header
+{
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    font-family: Inter;
+}
+header nav
+{
+    width: inherit;
+    height: inherit;
+    margin-top: 10px;
+}
+.head
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+.head ul
+{
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    list-style-type: none;
+}
+.head ul li
+{
+    display: inline;
+    margin-right: 30px;
+}
+.head ul a
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: #bebebe;
+    line-height: 26px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.head ul a:hover
+{
+    color: black;
+
+}
+.flexheader
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.connectWallet
+{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #141416;
+    border-radius: 16px;
+    padding: 16px;
+    border: none;
+}
+.head input
+{
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    outline: 0;
+}

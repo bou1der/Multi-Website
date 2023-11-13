@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&display=swap');
+/* styles */
+.ButPlaceBid
+{
+    text-decoration: none;
+    color: white;
+    background-color: #141416;
+    border-radius: 11px;
+    padding:18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 2px black solid;
+    cursor: pointer;
+    
+}
+.ButPlaceBid:hover
+{
+    background-color: white;
+    color: black;
+}
+.ButPlaceBid:active
+{
+    
+    background-color: rgba(173, 173, 173, 0.425);
+}
+/* styles */
+
 html
 {
     scroll-behavior: smooth;
@@ -63,9 +89,15 @@ header nav
 {
     font-size: 17px;
     font-weight: 500;
-    color: #606060;
+    color: #bebebe;
     line-height: 26px;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.head ul a:hover
+{
+    color: black;
+
 }
 .flexheader
 {
@@ -83,6 +115,7 @@ header nav
     background-color: #141416;
     border-radius: 16px;
     padding: 16px;
+    border: none;
 }
 .head input
 {
@@ -354,6 +387,26 @@ header nav
  align-items: center;
  justify-content: center;
  padding: 17px;
+ transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.block3category img
+{
+    transition: color 0.6s ease-in-out;
+}
+.block3category a:hover img
+{
+    filter: invert(200%);
+}
+.block3category a:hover
+{
+    background-color: black;
+    color: white;
+}
+.block3category a:active
+{
+    transition: none;
+    transition: border-color 0.05s ease-in-out;
+    border-color: rgb(255, 255, 255);
 }
 .block3category
 {
@@ -390,16 +443,6 @@ header nav
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-}
-.cardbottom a 
-{
-    text-decoration: none;
-    color: white;
-    background-color: #141416;
-    border-radius: 11px;
-    padding:18px;
-    padding-top: 9px;
-    padding-bottom: 9px;
 }
 .cardbottom p 
 {
@@ -654,7 +697,7 @@ header nav
 .footerBot p 
 {
     color: #999999;
-    
+
 }
 .footerBot a
 {
