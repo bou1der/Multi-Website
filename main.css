@@ -2,6 +2,7 @@
 html
 {
     scroll-behavior: smooth;
+    position: static;
 }
 body
 {
@@ -21,7 +22,7 @@ article
 {
     margin-top: 30px;
     right: 0px;
-    position: relative;
+    position: static;
 }
 header
 {
@@ -576,7 +577,7 @@ header nav
     background-color: black;
     border-radius: 30px;
 }
-@media (max-widght:460px)  {
+/* @media (max-widght:460px)  {
     .block5content
     {
         width: 100%;
@@ -586,7 +587,7 @@ header nav
     {
         border: 10px red solid;
     }
-}
+} */
 .block5leftbutt
 {
     background-color: white;
@@ -653,7 +654,7 @@ header nav
 .footerBot p 
 {
     color: #999999;
-
+    
 }
 .footerBot a
 {
