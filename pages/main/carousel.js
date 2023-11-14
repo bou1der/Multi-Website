@@ -1,11 +1,9 @@
 const carousel = document.querySelector('.carousel')
 var direction;
-
 var nextButton = document.querySelector('.next')
 nextButton.onclick = next;
 function next(){
     direction = -1;
-    carousel.style.justifyContent = 'flex-start';
     carousel.style.transform = "translateX("+ (-344) + "px)";
     nextButton.onclick = null;
 };
@@ -14,7 +12,6 @@ var prevButton = document.querySelector('.prev')
 prevButton.onclick = prev ;
 function prev(){
     direction = 1;
-    carousel.style.justifyContent = 'flex-end';
     carousel.style.transform = "translateX("+ 344 + "px)";
     prevButton.onclick = null;
 

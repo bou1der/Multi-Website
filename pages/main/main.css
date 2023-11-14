@@ -23,6 +23,196 @@
     
     background-color: rgba(173, 173, 173, 0.425);
 }
+.cardNFT
+{
+ background-color: #ffffff;
+ border-radius: 23px;
+ box-shadow: 38px 11px 40px 0px #bdbdbd99;
+
+}
+.time 
+{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: white;
+    background-color: #1C1D2059;
+    border-radius: 9px; 
+    position: absolute;
+    padding: 14px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 10px;
+}
+.cardbottom
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cardbottom p 
+{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.11800127476453781px;
+    text-align: left;
+    color: #94A3B8;
+    margin: 0px;
+}
+.incardbottom
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.block3incard
+{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+.block3incard img
+{
+    border-radius: 18px;
+}
+.NFTinfo
+{
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ width: 100%;
+ height: 100%;
+ background-color: #FAFAFA;
+}
+.NFTcontent
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.NFTselected
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+    margin-top: 100px;
+    background-color: #FAFAFA;
+    box-shadow:17px 3px 61px #00000069;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1029px;
+}
+.NFT
+{
+    max-width: 500px;
+    width: 80%;
+    min-width: 290px;
+}
+.NFTmainInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.NFTmainInfo h2
+{
+    font-size: 51px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    max-width: 465px;
+}
+.NFTmainInfo p
+{
+    font-size: 19px;
+    font-weight: 400;
+    color: #888888;
+    opacity: 0.7;
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+.NFTmainInfo span p
+{
+    font-size: 18px;
+    font-weight: 400;
+     
+}
+.NFTmainInfo span b
+{
+    font-size: 24px;
+    font-weight: 500;    
+}
+.NFTcreators
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.NFTcreators div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.NFTprice
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.NFTprice p
+{
+    color: #8C8C8C;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+}
+.NFTprice h2
+{
+    font-size: 33px;
+    font-weight: 600;
+    color: #292B39;
+}
+.NFTprice h3
+{
+    font-size: 19px;
+    font-weight: 400;
+}
+.NFTprice span
+{
+    display: flex;
+    align-items: center;
+}
+.NFTselected button div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.NFTselected button
+{
+    background-color: #141416;
+    border-radius: 20px;
+    border: 2px #ffffff solid;
+    transition: filter 0.15s ease-in-out;
+    cursor: pointer;
+}
+.NFTselected button:hover
+{
+    filter:invert(100%);
+}
 /* styles */
 
 html
@@ -387,7 +577,7 @@ header nav
  align-items: center;
  justify-content: center;
  padding: 17px;
- transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+ transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 .block3category img
 {
@@ -414,63 +604,7 @@ header nav
     flex-flow: row wrap;
     gap: 22px;
 }
-.block3card
-{
- background-color: #ffffff;
- border-radius: 23px;
- box-shadow: 38px 11px 40px 0px #bdbdbd99;
 
-}
-.time 
-{
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    text-align: left;
-    color: white;
-    background-color: #1C1D2059;
-    border-radius: 9px; 
-    position: absolute;
-    padding: 14px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    margin-left: 10px;
-}
-.cardbottom
-{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.cardbottom p 
-{
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.11800127476453781px;
-    text-align: left;
-    color: #94A3B8;
-    margin: 0px;
-}
-.incardbottom
-{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-.block3incard
-{
-    display: flex;
-    flex-flow: column wrap;
-    padding: 20px;
-}
-.block3incard img
-{
-    border-radius: 18px;
-}
 .cardgrid
 {
     display: flex;
