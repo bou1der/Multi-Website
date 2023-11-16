@@ -1,6 +1,7 @@
 
 let button = document.querySelectorAll('.ButPlaceBid');
-const alertWin = document.querySelector('.alert');
+const alertWin = document.querySelector('.NFTinfo');
+const closenft = document.querySelector('.CloseNFT')
 alertWin.remove();
 
 button.forEach((elem)=> {
@@ -15,8 +16,10 @@ function func(){
     alertWin.style.top = window.pageYOffset
     document.body.append(alertWin)
 }
-function back(){
+closenft.addEventListener('click', function(){
     alertWin.remove();
-}
+});
+   
+
 console.log(button);
 console.log(alertWin)

@@ -87,13 +87,17 @@
  right: 0px;
  width: 100%;
  height: 100%;
- background-color: #FAFAFA;
+ 
+ backdrop-filter: blur(200px);
+ z-index: 10;
 }
 .NFTcontent
 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 .NFTselected
 {
@@ -213,6 +217,136 @@
 {
     filter:invert(100%);
 }
+.closeblocknft
+{
+ display: flex;
+ flex-flow: row nowrap;
+ align-items: center;
+ margin-top: 60px;
+ width: 100%;
+ margin-left: 17%;
+}
+.closeblocknft div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+}
+.closeblocknft h3
+{
+    font-size: 31px;
+    font-weight: 600;
+    margin: 0px;
+}
+.closeblocknft button
+{
+    background: none;
+    border: none;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.closeblocknft button:hover
+{
+    border-radius: 40px;
+    background-color: #E6E8EC;
+    cursor: pointer;
+}
+.moreNFT
+{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.moreNFT h4
+{
+    margin-left: 10%;
+    margin-top: 70px;
+    font-size: 31px;
+    font-weight: 600;
+    color: #C3C3C3;
+}
+.moreNFTcard
+{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 17px;
+    box-shadow:1px 2px 20px 3px rgba(0, 0, 0, 0.171) ;
+}
+
+.inmoreNFTcard
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.NFTcardInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.inmoreNFTcard a img
+{
+    width: 100%;
+    max-width: 190px;
+}
+.inmoreNFTcard h3
+{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+}
+.inmoreNFTcard h2
+{
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px;
+}
+.inmoreNFTcard span img
+{
+    max-height: 25px;
+    min-height: 15px;
+}
+.price p 
+{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.NFTcardpriceBott div
+{
+ display: flex;
+ flex-flow: row nowrap;
+ align-items: center;
+ gap: 8px;
+}
+.NFTcardpriceBott
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.NFTcardpriceBott p
+{
+    margin: 0px;
+}
+.NFTcardauthor
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.cardNFTgrid
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+}
 /* styles */
 
 html
@@ -247,6 +381,10 @@ header
     top: 0px;
     left: 0px;
     font-family: Inter;
+}
+section
+{
+    display: contents;
 }
 header nav
 {
