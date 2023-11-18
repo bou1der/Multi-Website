@@ -1,25 +1,28 @@
 
 let button = document.querySelectorAll('.ButPlaceBid');
 const alertWin = document.querySelector('.NFTinfo');
-const closenft = document.querySelector('.CloseNFT')
+const closenft = document.querySelector('.CloseNFT');
+const alertContent = document.querySelector('.NFTcontent')
 alertWin.remove();
 
 button.forEach((elem)=> {
  elem.addEventListener('click', func);
 })
 
-document.body.addEventListener('scroll', () =>{
-    var offset = window.scrollY
-    console.log(offset)
-})
 function func(){
-    alertWin.style.top = window.pageYOffset
-    document.body.append(alertWin)
+    
+    document.body.prepend(alertWin)
+    
+    alertWin.style.height = document.body.clientHeight + "px"
+    alertContent.style.top = window.scrollY + 'px'
+    setTimeout(function(){
+    alertWin.style.opacity = 1;
+    }, 100);
 }
 closenft.addEventListener('click', function(){
+    alertWin.style.opacity = 0;
+    setTimeout(function(){
     alertWin.remove();
+    }, 200);
+    
 });
-   
-
-console.log(button);
-console.log(alertWin)
