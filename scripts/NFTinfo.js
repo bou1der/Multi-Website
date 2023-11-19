@@ -1,4 +1,3 @@
-
 let button = document.querySelectorAll('.ButPlaceBid');
 const alertWin = document.querySelector('.NFTinfo');
 const closenft = document.querySelector('.CloseNFT');
@@ -9,10 +8,10 @@ button.forEach((elem)=> {
  elem.addEventListener('click', func);
 })
 
-function func(){
-    
+function func(clikedbutton){
+    let NFTsrc = clikedbutton.target.parentElement.parentElement.querySelector('img').getAttribute('src');
+    alertContent.querySelector('.NFTselected > img').src = NFTsrc
     document.body.prepend(alertWin)
-    
     alertWin.style.height = document.body.clientHeight + "px"
     alertContent.style.top = window.scrollY + 'px'
     setTimeout(function(){

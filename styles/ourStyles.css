@@ -1,0 +1,367 @@
+/* styles */
+.ButPlaceBid
+{
+    text-decoration: none;
+    color: white;
+    background-color: #141416;
+    border-radius: 11px;
+    padding:18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: 2px black solid;
+    cursor: pointer;
+    
+}
+.ButPlaceBid:hover
+{
+    background-color: white;
+    color: black;
+}
+.ButPlaceBid:active
+{
+    
+    background-color: rgba(173, 173, 173, 0.425);
+}
+.cardNFT
+{
+ background-color: #ffffff;
+ border-radius: 23px;
+ box-shadow: 38px 11px 40px 0px #bdbdbd99;
+
+}
+.cardNFT img
+{
+    max-width: 254px;
+}
+.time 
+{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: white;
+    background-color: #1C1D2059;
+    border-radius: 9px; 
+    position: absolute;
+    padding: 14px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 10px;
+}
+.cardbottom
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cardbottom p 
+{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.11800127476453781px;
+    text-align: left;
+    color: #94A3B8;
+    margin: 0px;
+}
+.incardbottom
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.block3incard
+{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+.block3incard img
+{
+    border-radius: 18px;
+}
+.NFTinfo
+{
+ position:absolute;
+ top: 0px;
+ right: 0px;
+ width: 100%;
+ height: 100%;
+ 
+ backdrop-filter: blur(5px);
+ opacity: 0;
+ transition: opacity 0.2s ease-in-out;
+ z-index: 10;
+ 
+}
+.NFTcontent
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0px 0px 60px 2px rgba(0, 0, 0, 0.336);
+}
+.NFTselected
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+    margin-top: 100px;
+    background-color: #FAFAFA;
+    box-shadow:17px 3px 61px #00000069;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1029px;
+}
+.NFT
+{
+    width: 500px;
+    border-radius: 20px;
+}
+.NFTmainInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.NFTmainInfo h2
+{
+    font-size: 51px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    max-width: 465px;
+}
+.NFTmainInfo p
+{
+    font-size: 19px;
+    font-weight: 400;
+    color: #888888;
+    opacity: 0.7;
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+.NFTmainInfo span p
+{
+    font-size: 18px;
+    font-weight: 400;
+     
+}
+.NFTmainInfo span b
+{
+    font-size: 24px;
+    font-weight: 500;    
+}
+.NFTcreators
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.NFTcreators div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.NFTprice
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.NFTprice p
+{
+    color: #8C8C8C;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+}
+.NFTprice h2
+{
+    font-size: 33px;
+    font-weight: 600;
+    color: #292B39;
+}
+.NFTprice h3
+{
+    font-size: 19px;
+    font-weight: 400;
+}
+.NFTprice span
+{
+    display: flex;
+    align-items: center;
+}
+.NFTselected button div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.NFTselected button
+{
+    background-color: #141416;
+    border-radius: 20px;
+    border: 2px #ffffff solid;
+    transition: filter 0.15s ease-in-out;
+    cursor: pointer;
+}
+.NFTselected button:hover
+{
+    filter:invert(100%);
+}
+.closeblocknft
+{
+ display: flex;
+ flex-flow: row nowrap;
+ align-items: center;
+ margin-top: 60px;
+ width: 100%;
+ margin-left: 17%;
+}
+.closeblocknft div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+}
+.closeblocknft h3
+{
+    font-size: 31px;
+    font-weight: 600;
+    margin: 0px;
+}
+.closeblocknft button
+{
+    background: none;
+    border: none;
+    min-height: 36px;
+    min-width: 36px;
+}
+
+.closeblocknft button:hover
+{
+    border-radius: 40px;
+    background-color: #E6E8EC;
+    cursor: pointer;
+}
+.moreNFT
+{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.moreNFT h4
+{
+    margin-left: 10%;
+    margin-top: 70px;
+    font-size: 31px;
+    font-weight: 600;
+    color: #C3C3C3;
+}
+.moreNFTcard
+{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 17px;
+    box-shadow:1px 2px 20px 3px rgba(0, 0, 0, 0.171) ;
+}
+
+.inmoreNFTcard
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.NFTcardInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.inmoreNFTcard a img
+{
+    width: 100%;
+    max-width: 190px;
+    border-radius: 15px;
+}
+.inmoreNFTcard h3
+{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+}
+.inmoreNFTcard h2
+{
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px;
+}
+.inmoreNFTcard span img
+{
+    max-height: 25px;
+    min-height: 15px;
+}
+.price p 
+{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.NFTcardpriceBott div
+{
+ display: flex;
+ flex-flow: row nowrap;
+ align-items: center;
+ gap: 8px;
+}
+.NFTcardpriceBott
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.NFTcardpriceBott p
+{
+    margin: 0px;
+}
+.NFTcardauthor
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.cardNFTgrid
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.ExploreMore
+{
+    border: 2px rgb(255, 255, 255) solid;
+    transition: filter 0.15s ease-in-out;
+}
+.ExploreMore:hover
+{
+ filter: invert(100%);
+}
+/* styles */
